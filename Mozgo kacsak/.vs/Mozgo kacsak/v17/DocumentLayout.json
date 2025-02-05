@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Fekete Balazs\\FB\\Mozgo kacsak\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AFDE6CC9-D5C7-478B-98F9-43C2CA1EA519}|Mozgo kacsak\\Mozgo kacsak.csproj|d:\\fekete balazs\\fb\\mozgo kacsak\\mozgo kacsak\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AFDE6CC9-D5C7-478B-98F9-43C2CA1EA519}|Mozgo kacsak\\Mozgo kacsak.csproj|solutionrelative:mozgo kacsak\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFDE6CC9-D5C7-478B-98F9-43C2CA1EA519}|Mozgo kacsak\\Mozgo kacsak.csproj|d:\\fekete balazs\\fb\\mozgo kacsak\\mozgo kacsak\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFDE6CC9-D5C7-478B-98F9-43C2CA1EA519}|Mozgo kacsak\\Mozgo kacsak.csproj|solutionrelative:mozgo kacsak\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\Fekete Balazs\\FB\\Mozgo kacsak\\Mozgo kacsak\\Form1.cs",
+              "RelativeDocumentMoniker": "Mozgo kacsak\\Form1.cs",
+              "ToolTip": "D:\\Fekete Balazs\\FB\\Mozgo kacsak\\Mozgo kacsak\\Form1.cs [Design]",
+              "RelativeToolTip": "Mozgo kacsak\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T13:15:43.102Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\Fekete Balazs\\FB\\Mozgo kacsak\\Mozgo kacsak\\Form1.cs",
+              "RelativeDocumentMoniker": "Mozgo kacsak\\Form1.cs",
+              "ToolTip": "D:\\Fekete Balazs\\FB\\Mozgo kacsak\\Mozgo kacsak\\Form1.cs",
+              "RelativeToolTip": "Mozgo kacsak\\Form1.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAADQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T10:57:43.609Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

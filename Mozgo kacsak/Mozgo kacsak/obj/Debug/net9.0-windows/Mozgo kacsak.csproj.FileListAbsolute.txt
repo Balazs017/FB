@@ -1,0 +1,18 @@
+D:\Fekete Balazs\FB\Mozgo kacsak\Mozgo kacsak\obj\Debug\net9.0-windows\Mozgo_kacsak.Form1.resources
+D:\Fekete Balazs\FB\Mozgo kacsak\Mozgo kacsak\obj\Debug\net9.0-windows\Mozgo kacsak.csproj.GenerateResource.cache
+D:\Fekete Balazs\FB\Mozgo kacsak\Mozgo kacsak\obj\Debug\net9.0-windows\Mozgo kacsak.GeneratedMSBuildEditorConfig.editorconfig
+D:\Fekete Balazs\FB\Mozgo kacsak\Mozgo kacsak\obj\Debug\net9.0-windows\Mozgo kacsak.AssemblyInfoInputs.cache
+D:\Fekete Balazs\FB\Mozgo kacsak\Mozgo kacsak\obj\Debug\net9.0-windows\Mozgo kacsak.AssemblyInfo.cs
+D:\Fekete Balazs\FB\Mozgo kacsak\Mozgo kacsak\obj\Debug\net9.0-windows\Mozgo kacsak.csproj.CoreCompileInputs.cache
+D:\Fekete Balazs\FB\Mozgo kacsak\Mozgo kacsak\obj\Debug\net9.0-windows\Mozgo kacsak.sourcelink.json
+D:\Fekete Balazs\FB\Mozgo kacsak\Mozgo kacsak\obj\Debug\net9.0-windows\Mozgo_kacsak.Properties.Resources.resources
+D:\Fekete Balazs\FB\Mozgo kacsak\Mozgo kacsak\bin\Debug\net9.0-windows\Mozgo kacsak.exe
+D:\Fekete Balazs\FB\Mozgo kacsak\Mozgo kacsak\bin\Debug\net9.0-windows\Mozgo kacsak.deps.json
+D:\Fekete Balazs\FB\Mozgo kacsak\Mozgo kacsak\bin\Debug\net9.0-windows\Mozgo kacsak.runtimeconfig.json
+D:\Fekete Balazs\FB\Mozgo kacsak\Mozgo kacsak\bin\Debug\net9.0-windows\Mozgo kacsak.dll
+D:\Fekete Balazs\FB\Mozgo kacsak\Mozgo kacsak\bin\Debug\net9.0-windows\Mozgo kacsak.pdb
+D:\Fekete Balazs\FB\Mozgo kacsak\Mozgo kacsak\obj\Debug\net9.0-windows\Mozgo kacsak.dll
+D:\Fekete Balazs\FB\Mozgo kacsak\Mozgo kacsak\obj\Debug\net9.0-windows\refint\Mozgo kacsak.dll
+D:\Fekete Balazs\FB\Mozgo kacsak\Mozgo kacsak\obj\Debug\net9.0-windows\Mozgo kacsak.pdb
+D:\Fekete Balazs\FB\Mozgo kacsak\Mozgo kacsak\obj\Debug\net9.0-windows\Mozgo kacsak.genruntimeconfig.cache
+D:\Fekete Balazs\FB\Mozgo kacsak\Mozgo kacsak\obj\Debug\net9.0-windows\ref\Mozgo kacsak.dll

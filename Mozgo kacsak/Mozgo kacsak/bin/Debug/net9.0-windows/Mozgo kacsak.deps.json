@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Mozgo kacsak/1.0.0": {
+        "runtime": {
+          "Mozgo kacsak.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Mozgo kacsak/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
