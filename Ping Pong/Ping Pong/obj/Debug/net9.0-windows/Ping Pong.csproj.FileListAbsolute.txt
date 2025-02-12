@@ -1,0 +1,18 @@
+D:\Fekete Balazs\FB\Ping Pong\Ping Pong\bin\Debug\net9.0-windows\Ping Pong.exe
+D:\Fekete Balazs\FB\Ping Pong\Ping Pong\bin\Debug\net9.0-windows\Ping Pong.deps.json
+D:\Fekete Balazs\FB\Ping Pong\Ping Pong\bin\Debug\net9.0-windows\Ping Pong.runtimeconfig.json
+D:\Fekete Balazs\FB\Ping Pong\Ping Pong\bin\Debug\net9.0-windows\Ping Pong.dll
+D:\Fekete Balazs\FB\Ping Pong\Ping Pong\bin\Debug\net9.0-windows\Ping Pong.pdb
+D:\Fekete Balazs\FB\Ping Pong\Ping Pong\obj\Debug\net9.0-windows\Ping_Pong.Form1.resources
+D:\Fekete Balazs\FB\Ping Pong\Ping Pong\obj\Debug\net9.0-windows\Ping_Pong.Properties.Resources.resources
+D:\Fekete Balazs\FB\Ping Pong\Ping Pong\obj\Debug\net9.0-windows\Ping Pong.csproj.GenerateResource.cache
+D:\Fekete Balazs\FB\Ping Pong\Ping Pong\obj\Debug\net9.0-windows\Ping Pong.GeneratedMSBuildEditorConfig.editorconfig
+D:\Fekete Balazs\FB\Ping Pong\Ping Pong\obj\Debug\net9.0-windows\Ping Pong.AssemblyInfoInputs.cache
+D:\Fekete Balazs\FB\Ping Pong\Ping Pong\obj\Debug\net9.0-windows\Ping Pong.AssemblyInfo.cs
+D:\Fekete Balazs\FB\Ping Pong\Ping Pong\obj\Debug\net9.0-windows\Ping Pong.csproj.CoreCompileInputs.cache
+D:\Fekete Balazs\FB\Ping Pong\Ping Pong\obj\Debug\net9.0-windows\Ping Pong.sourcelink.json
+D:\Fekete Balazs\FB\Ping Pong\Ping Pong\obj\Debug\net9.0-windows\Ping Pong.dll
+D:\Fekete Balazs\FB\Ping Pong\Ping Pong\obj\Debug\net9.0-windows\refint\Ping Pong.dll
+D:\Fekete Balazs\FB\Ping Pong\Ping Pong\obj\Debug\net9.0-windows\Ping Pong.pdb
+D:\Fekete Balazs\FB\Ping Pong\Ping Pong\obj\Debug\net9.0-windows\Ping Pong.genruntimeconfig.cache
+D:\Fekete Balazs\FB\Ping Pong\Ping Pong\obj\Debug\net9.0-windows\ref\Ping Pong.dll
