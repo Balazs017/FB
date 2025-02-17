@@ -1,0 +1,15 @@
+D:\Fekete\c#\FB\Szofi\bin\Debug\net8.0\Szofi.exe
+D:\Fekete\c#\FB\Szofi\bin\Debug\net8.0\Szofi.deps.json
+D:\Fekete\c#\FB\Szofi\bin\Debug\net8.0\Szofi.runtimeconfig.json
+D:\Fekete\c#\FB\Szofi\bin\Debug\net8.0\Szofi.dll
+D:\Fekete\c#\FB\Szofi\bin\Debug\net8.0\Szofi.pdb
+D:\Fekete\c#\FB\Szofi\obj\Debug\net8.0\Szofi.GeneratedMSBuildEditorConfig.editorconfig
+D:\Fekete\c#\FB\Szofi\obj\Debug\net8.0\Szofi.AssemblyInfoInputs.cache
+D:\Fekete\c#\FB\Szofi\obj\Debug\net8.0\Szofi.AssemblyInfo.cs
+D:\Fekete\c#\FB\Szofi\obj\Debug\net8.0\Szofi.csproj.CoreCompileInputs.cache
+D:\Fekete\c#\FB\Szofi\obj\Debug\net8.0\Szofi.sourcelink.json
+D:\Fekete\c#\FB\Szofi\obj\Debug\net8.0\Szofi.dll
+D:\Fekete\c#\FB\Szofi\obj\Debug\net8.0\refint\Szofi.dll
+D:\Fekete\c#\FB\Szofi\obj\Debug\net8.0\Szofi.pdb
+D:\Fekete\c#\FB\Szofi\obj\Debug\net8.0\Szofi.genruntimeconfig.cache
+D:\Fekete\c#\FB\Szofi\obj\Debug\net8.0\ref\Szofi.dll
