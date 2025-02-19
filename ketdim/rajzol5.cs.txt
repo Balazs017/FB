@@ -1,0 +1,34 @@
+using System;
+
+
+class Rajzol5
+{
+    static void Main() {
+        int meret = 13;
+ 
+        int[,] palya = new int[meret,meret];
+        for (int i = 0; i < meret; i++)
+        {
+            for (int j = 0; j < meret; j++)
+            {
+                if(i == 6 && j ==6 ){
+                    Console.Write('X');
+                }
+                else if (i == 7 && j==6)
+                {
+                    Console.Write('X');
+
+                }
+                else if (i==7 && (j>=6 && j<=8)){
+                    Console.Write('X');
+                }
+                else if 
+            }  
+            Console.WriteLine();
+        }
+        Console.ReadKey();
+        }
+ 
+ 
+ 
+}

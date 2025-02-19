@@ -1,0 +1,52 @@
+using System;
+ 
+class Program
+{
+ 
+    static void Felsosor(int size)
+    {
+        for (int i = 0; i < size; i++)
+        {
+            Console.Write('X');
+        }
+        Console.WriteLine();
+    }
+ 
+    static void Kereszt(int size)
+    {
+        for (int i = 1; i < size - 1; i++)
+        {
+            for (int j = 0; j < size - i - 1; j++)
+            {
+                Console.Write('*');
+            }
+            Console.Write('X');
+            for (int j = 0; j < i - 1; j++)
+            {
+                Console.Write('*');
+            }
+            Console.WriteLine();
+        }
+    }
+ 
+    static void Alsosor(int size)
+    {
+        for (int i = 0; i < size; i++)
+        {
+            Console.Write('X');
+        }
+        Console.WriteLine();
+        Console.ReadKey();
+    }
+    static void Main()
+    {
+        int size = 13;
+ 
+        Felsosor(size);
+        Kereszt(size);
+        Alsosor(size);
+    }
+}
+ 
+ 
+ 

@@ -1,0 +1,73 @@
+﻿using System;
+ 
+class Ketdim1 {
+    const int Oszlop = 40;
+    const int Sor = 20;
+ 
+    static char [,] kartomb = new char[Oszlop,Sor];
+ 
+ 
+    static void Alaphelyzet(){
+ 
+        for (int osz = 0; osz < Oszlop; osz++)
+        {
+            for (int sor = 0; sor < Sor; sor++)
+            {
+                kartomb[osz,sor] = ' ';
+            }
+        }
+ 
+        Random rnd = new Random();
+        for (int i = 0; i < Oszlop*5; i++)
+        {
+            int x = rnd.Next(0,Oszlop);
+            int y = rnd.Next(0,Sor);
+            char betu = (char) ('A'+rnd.Next(0,26));
+            kartomb[x,y] = betu;
+ 
+        }
+    }
+ 
+    static void Kiir(){
+        for (int sor = 0; sor < Sor; sor++)
+        {
+            Console.SetCursorPosition(0,sor);
+            for (int osz = 0; osz < Oszlop; osz++)
+            {
+                System.Console.Write(kartomb[osz,sor]);
+            }
+        }
+    }
+ 
+    static void Eltunt(){
+        Random rnd = new Random();
+ 
+        int x = rnd.Next(Oszlop);
+        int y = rnd.Next(Sor);
+        if ('A' <= kartomb[x,y] && kartomb[x,y] <= 'Z')
+        {
+            kartomb[x,y] = ' ';
+            Console.SetCursorPosition(x,y);
+            Console.Write(' ');
+        }
+    }
+ 
+    static void Main(){
+        Console.SetWindowSize(Oszlop+2,Sor+2);
+ 
+        Alaphelyzet();
+        Kiir();
+ 
+        for (int i = 0; i < 500; i++)
+        {
+            Eltunt();
+            Thread.Sleep(500);
+        }
+ 
+        Console.SetCursorPosition(5,3);
+ 
+        Console.ReadKey();
+ 
+    }
+}
+ 

@@ -1,0 +1,36 @@
+using System;
+
+using System;
+
+class Rajzol4
+{
+    static void Main()
+    {
+        int meret = 13;
+        
+        int[,] palya = new int[meret, meret];
+        
+        for (int i = 0; i < meret; i++)
+        {
+            for (int j = 0; j < meret; j++)
+            {
+                
+                if (i == 0 || i == meret - 1 || j == 0 || j == meret - 1)
+                {
+                    Console.Write('O');  
+                }
+                else if (i % 2 == 0 && j % 2 == 0 || i % 2 == 1 && j % 2 == 1)
+                {
+                    Console.Write('X');  
+                }
+                else
+                {
+                    Console.Write(' ');  
+                }
+            }
+            Console.WriteLine();
+        }
+        Console.ReadKey();
+    }
+}
+
