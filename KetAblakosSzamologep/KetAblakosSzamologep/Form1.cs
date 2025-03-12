@@ -67,7 +67,29 @@ namespace KetAblakosSzamologep
                     int osszeg = bal + jobb;
                     balSzam.Text = osszeg.ToString();
                     break;
+
+                case '-':
+                    int kul = bal - jobb;
+                    balSzam.Text = kul.ToString();
+                break;
+
+                case '*':
+                    int szor = bal * jobb;
+                    balSzam.Text = szor.ToString();
+                    break;
+                case '/':
+                    if (jobb != 0)
+                    {
+                        int hany = bal / jobb;
+                        balSzam.Text = hany.ToString();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Osztás nullával");
+                    }
+                    break;
             }
+            jobbSzam.Text = "0";
         }
     }
 }

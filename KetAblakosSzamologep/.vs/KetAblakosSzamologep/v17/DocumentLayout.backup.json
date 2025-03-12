@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Fekete\\FB\\KetAblakosSzamologep\\",
+  "WorkspaceRootPath": "D:\\Fekete Gar\u00E1zs\\FB\\KetAblakosSzamologep\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FEBC1ABF-5C3B-41F5-A39D-B7F21F89CA0E}|KetAblakosSzamologep\\KetAblakosSzamologep.csproj|d:\\fekete\\fb\\ketablakosszamologep\\ketablakosszamologep\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEBC1ABF-5C3B-41F5-A39D-B7F21F89CA0E}|KetAblakosSzamologep\\KetAblakosSzamologep.csproj|solutionrelative:ketablakosszamologep\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FEBC1ABF-5C3B-41F5-A39D-B7F21F89CA0E}|KetAblakosSzamologep\\KetAblakosSzamologep.csproj|d:\\fekete gar\u00E1zs\\fb\\ketablakosszamologep\\ketablakosszamologep\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FEBC1ABF-5C3B-41F5-A39D-B7F21F89CA0E}|KetAblakosSzamologep\\KetAblakosSzamologep.csproj|solutionrelative:ketablakosszamologep\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEBC1ABF-5C3B-41F5-A39D-B7F21F89CA0E}|KetAblakosSzamologep\\KetAblakosSzamologep.csproj|d:\\fekete\\fb\\ketablakosszamologep\\ketablakosszamologep\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FEBC1ABF-5C3B-41F5-A39D-B7F21F89CA0E}|KetAblakosSzamologep\\KetAblakosSzamologep.csproj|solutionrelative:ketablakosszamologep\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{FEBC1ABF-5C3B-41F5-A39D-B7F21F89CA0E}|KetAblakosSzamologep\\KetAblakosSzamologep.csproj|d:\\fekete gar\u00E1zs\\fb\\ketablakosszamologep\\ketablakosszamologep\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEBC1ABF-5C3B-41F5-A39D-B7F21F89CA0E}|KetAblakosSzamologep\\KetAblakosSzamologep.csproj|solutionrelative:ketablakosszamologep\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +18,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\Fekete\\FB\\KetAblakosSzamologep\\KetAblakosSzamologep\\Form1.cs",
+              "DocumentMoniker": "D:\\Fekete Gar\u00E1zs\\FB\\KetAblakosSzamologep\\KetAblakosSzamologep\\Form1.cs",
               "RelativeDocumentMoniker": "KetAblakosSzamologep\\Form1.cs",
-              "ToolTip": "D:\\Fekete\\FB\\KetAblakosSzamologep\\KetAblakosSzamologep\\Form1.cs [Design]*",
-              "RelativeToolTip": "KetAblakosSzamologep\\Form1.cs [Design]*",
+              "ToolTip": "D:\\Fekete Gar\u00E1zs\\FB\\KetAblakosSzamologep\\KetAblakosSzamologep\\Form1.cs [Design]",
+              "RelativeToolTip": "KetAblakosSzamologep\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-10T11:02:29.056Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\Fekete\\FB\\KetAblakosSzamologep\\KetAblakosSzamologep\\Form1.cs",
+              "DocumentMoniker": "D:\\Fekete Gar\u00E1zs\\FB\\KetAblakosSzamologep\\KetAblakosSzamologep\\Form1.cs",
               "RelativeDocumentMoniker": "KetAblakosSzamologep\\Form1.cs",
-              "ToolTip": "D:\\Fekete\\FB\\KetAblakosSzamologep\\KetAblakosSzamologep\\Form1.cs*",
-              "RelativeToolTip": "KetAblakosSzamologep\\Form1.cs*",
-              "ViewState": "AgIAABoAAAAAAAAAAAAUwDUAAAAkAAAAAAAAAA==",
+              "ToolTip": "D:\\Fekete Gar\u00E1zs\\FB\\KetAblakosSzamologep\\KetAblakosSzamologep\\Form1.cs",
+              "RelativeToolTip": "KetAblakosSzamologep\\Form1.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAUwEIAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T10:10:18.388Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T10:10:18.388Z"
             }
           ]
         }
