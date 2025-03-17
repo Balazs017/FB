@@ -48,6 +48,7 @@
             button29 = new Button();
             History = new ListBox();
             button12 = new Button();
+            button13 = new Button();
             SuspendLayout();
             // 
             // balSzam
@@ -165,7 +166,7 @@
             button10.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
             button10.Location = new Point(80, 352);
             button10.Name = "button10";
-            button10.Size = new Size(123, 50);
+            button10.Size = new Size(50, 50);
             button10.TabIndex = 11;
             button10.Text = "0";
             button10.UseVisualStyleBackColor = true;
@@ -273,7 +274,7 @@
             button12.BackColor = Color.Lime;
             button12.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
             button12.ForeColor = SystemColors.ControlText;
-            button12.Location = new Point(419, 297);
+            button12.Location = new Point(419, 303);
             button12.Name = "button12";
             button12.Size = new Size(189, 50);
             button12.TabIndex = 29;
@@ -281,11 +282,23 @@
             button12.UseVisualStyleBackColor = false;
             button12.Click += Muveletklikk;
             // 
+            // button13
+            // 
+            button13.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            button13.Location = new Point(153, 352);
+            button13.Name = "button13";
+            button13.Size = new Size(50, 50);
+            button13.TabIndex = 30;
+            button13.Text = ",";
+            button13.UseVisualStyleBackColor = true;
+            button13.Click += button13_Click;
+            // 
             // Ketablakos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1193, 619);
+            Controls.Add(button13);
             Controls.Add(button12);
             Controls.Add(History);
             Controls.Add(button26);
@@ -334,5 +347,6 @@
         private Button button29;
         private ListBox History;
         private Button button12;
+        private Button button13;
     }
 }

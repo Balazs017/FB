@@ -2,7 +2,7 @@ namespace KetAblakosSzamologep
 {
     public partial class Ketablakos : Form
     {
-        int bal, jobb;
+        double bal, jobb;
         public Ketablakos()
         {
             InitializeComponent();
@@ -46,8 +46,8 @@ namespace KetAblakosSzamologep
                 char utut = utolso[utolso.Length - 1];
                 if (utut == '+' || utut == '-' || utut == '*' || utut == '/')
                 {
-                    jobb = int.Parse(balSzam.Text);
-                    int eredm = 0;
+                    jobb = double.Parse(balSzam.Text);
+                    double eredm = 0;
                     bool hiba = false;
                     switch (utut)
                     {
@@ -56,7 +56,7 @@ namespace KetAblakosSzamologep
                             break;
 
                         case '-':
-                            eredm = bal -jobb;
+                            eredm = bal - jobb;
                             break;
 
                         case '*':
@@ -81,26 +81,36 @@ namespace KetAblakosSzamologep
                         {
                             balSzam.Text = "0";
                         }
-                        else {
+                        else
+                        {
                             bal = eredm;
                             History.Items.Add(eredm.ToString() + muv.ToString());
                         }
-                    }     
+                    }
                 }
                 else
                 {
-                    bal = int.Parse(balSzam.Text);
-                    History.Items.Add(bal.ToString()+ muv.ToString());
+                    bal = double.Parse(balSzam.Text);
+                    History.Items.Add(bal.ToString() + muv.ToString());
                 }
 
             }
             else
             {
-                bal = int.Parse(balSzam.Text);
+                bal = double.Parse(balSzam.Text);
                 History.Items.Add(bal.ToString() + muv.ToString());
             }
             balSzam.Text = "0";
 
+
+        }
+
+        private void button13_Click(object sender, EventArgs e) { 
+
+            if(!balSzam.Text.Contains(","))
+            {
+                balSzam.Text += ",";
+            }
         }
     }
 }
