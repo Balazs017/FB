@@ -76,7 +76,7 @@ namespace KetAblakosSzamologep
                     }
                     if (!hiba)
                     {
-                        History.Items[History.Items.Count - 1] += eredm.ToString();
+                        History.Items[History.Items.Count - 1] += jobb.ToString() + " " + eredm.ToString();
                         if (muv == '=')
                         {
                             balSzam.Text = "0";
