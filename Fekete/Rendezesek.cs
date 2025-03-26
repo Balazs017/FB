@@ -17,6 +17,9 @@ class Rendezesek
         tomb[m] = ment;
 
     }
+
+
+
     static Szampar MinKivRend()
     {
         Szampar szp = new ();
@@ -35,6 +38,27 @@ class Rendezesek
         }
         return szp;
     }
+
+     static Szampar KBrend()
+     {
+            Szampar par = new();
+            par.csere = 0;
+            par.ossze = 0;
+            
+            
+            for (int x = 0; x < N-1; x++)
+            {
+                int kiemelt = x;
+                int futo = x-1;
+                while (futo>= 0 && tomb[futo] >kiemelt)
+                {
+                    tomb[futo +1 ] = tomb [futo];
+                    futo --;
+                }
+                tomb[futo + 1] = kiemelt;
+            }
+            return par;
+     }
     static void Main()
     {
 
@@ -48,6 +72,8 @@ class Rendezesek
         Szampar ocs = MinKivRend();
         Kiir();
         System.Console.WriteLine("Összehasonlítás:" + ocs.ossze+"\tCsere:" +ocs.csere);
+        KBrend();
     }
 
+    
 }
