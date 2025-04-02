@@ -41,6 +41,9 @@
             button10 = new Button();
             button11 = new Button();
             timer1 = new System.Windows.Forms.Timer(components);
+            button12 = new Button();
+            button13 = new Button();
+            button14 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -135,7 +138,7 @@
             // 
             // button11
             // 
-            button11.Location = new Point(544, 116);
+            button11.Location = new Point(350, 117);
             button11.Name = "button11";
             button11.Size = new Size(75, 23);
             button11.TabIndex = 10;
@@ -148,11 +151,44 @@
             timer1.Enabled = true;
             timer1.Tick += timer1_Tick;
             // 
+            // button12
+            // 
+            button12.Location = new Point(451, 117);
+            button12.Name = "button12";
+            button12.Size = new Size(75, 23);
+            button12.TabIndex = 11;
+            button12.Text = "KozvCsere";
+            button12.UseVisualStyleBackColor = true;
+            button12.Click += KozvCsere;
+            // 
+            // button13
+            // 
+            button13.Location = new Point(544, 117);
+            button13.Name = "button13";
+            button13.Size = new Size(75, 23);
+            button13.TabIndex = 12;
+            button13.Text = "MinKiv";
+            button13.UseVisualStyleBackColor = true;
+            button13.Click += MinKiv;
+            // 
+            // button14
+            // 
+            button14.Location = new Point(644, 117);
+            button14.Name = "button14";
+            button14.Size = new Size(75, 23);
+            button14.TabIndex = 13;
+            button14.Text = "Beszuras";
+            button14.UseVisualStyleBackColor = true;
+            button14.Click += Beszuras;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1273, 450);
+            Controls.Add(button14);
+            Controls.Add(button13);
+            Controls.Add(button12);
             Controls.Add(button11);
             Controls.Add(button10);
             Controls.Add(button9);
@@ -184,5 +220,8 @@
         private Button button10;
         private Button button11;
         private System.Windows.Forms.Timer timer1;
+        private Button button12;
+        private Button button13;
+        private Button button14;
     }
 }

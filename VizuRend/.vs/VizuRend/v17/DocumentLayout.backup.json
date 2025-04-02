@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Fekete Balazs\\FB\\VizuRend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{55301C11-52B7-4A84-BBD4-581730ABE951}|VizuRend\\VizuRend.csproj|d:\\fekete balazs\\fb\\vizurend\\vizurend\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{55301C11-52B7-4A84-BBD4-581730ABE951}|VizuRend\\VizuRend.csproj|solutionrelative:vizurend\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{55301C11-52B7-4A84-BBD4-581730ABE951}|VizuRend\\VizuRend.csproj|d:\\fekete balazs\\fb\\vizurend\\vizurend\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55301C11-52B7-4A84-BBD4-581730ABE951}|VizuRend\\VizuRend.csproj|solutionrelative:vizurend\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55301C11-52B7-4A84-BBD4-581730ABE951}|VizuRend\\VizuRend.csproj|D:\\Fekete Balazs\\FB\\VizuRend\\vizurend\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{55301C11-52B7-4A84-BBD4-581730ABE951}|VizuRend\\VizuRend.csproj|solutionrelative:vizurend\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,24 +18,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\Fekete Balazs\\FB\\VizuRend\\VizuRend\\Form1.cs",
               "RelativeDocumentMoniker": "VizuRend\\Form1.cs",
               "ToolTip": "D:\\Fekete Balazs\\FB\\VizuRend\\VizuRend\\Form1.cs*",
               "RelativeToolTip": "VizuRend\\Form1.cs*",
-              "ViewState": "AgIAAAIAAAAAAAAAAIA8wBUAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAOkAAAAAAAAAAAAQwBABAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-26T08:09:40.425Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\Fekete Balazs\\FB\\VizuRend\\VizuRend\\Form1.cs",
               "RelativeDocumentMoniker": "VizuRend\\Form1.cs",
