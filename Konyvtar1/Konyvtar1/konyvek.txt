@@ -1,0 +1,5 @@
+1002;József Attila;Összes verse;1936
+1005;Radnóti Miklós;Versciklus;1939
+1008;Benedek Elek;Magyar népmesék;1986
+1278;Simon János;Rózsa Sándor a lovát ugratja;1978
+7444;majom;fekete;2025

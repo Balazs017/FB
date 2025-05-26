@@ -1,0 +1,3 @@
+2110;Kovács Júlia;Budapest;29
+2134;Fekete Balázs;Pécs;18
+3657;Kelemen Zsolt;Siófok;29
