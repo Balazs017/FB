@@ -58,6 +58,9 @@
             label8 = new Label();
             OlvListBox = new ListBox();
             tabPage3 = new TabPage();
+            kolcsonzes = new Button();
+            meghosszabit = new Button();
+            visszavetel = new Button();
             kzkmeddig = new TextBox();
             kzkMeddigLabel = new Label();
             kzkmikortol = new TextBox();
@@ -67,6 +70,7 @@
             label5 = new Label();
             kzkKonyvValaszto = new ComboBox();
             kzkListBox = new ListBox();
+            kzkolvasov = new ComboBox();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
@@ -382,6 +386,10 @@
             // tabPage3
             // 
             tabPage3.BackColor = Color.SeaShell;
+            tabPage3.Controls.Add(kzkolvasov);
+            tabPage3.Controls.Add(kolcsonzes);
+            tabPage3.Controls.Add(meghosszabit);
+            tabPage3.Controls.Add(visszavetel);
             tabPage3.Controls.Add(kzkmeddig);
             tabPage3.Controls.Add(kzkMeddigLabel);
             tabPage3.Controls.Add(kzkmikortol);
@@ -397,6 +405,36 @@
             tabPage3.Size = new Size(671, 297);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Kölcsönzések";
+            // 
+            // kolcsonzes
+            // 
+            kolcsonzes.Location = new Point(338, 252);
+            kolcsonzes.Name = "kolcsonzes";
+            kolcsonzes.Size = new Size(75, 23);
+            kolcsonzes.TabIndex = 15;
+            kolcsonzes.Text = "Kölcsönzés";
+            kolcsonzes.UseVisualStyleBackColor = true;
+            kolcsonzes.Click += kolcsonzes_Click;
+            // 
+            // meghosszabit
+            // 
+            meghosszabit.Location = new Point(465, 151);
+            meghosszabit.Name = "meghosszabit";
+            meghosszabit.Size = new Size(89, 30);
+            meghosszabit.TabIndex = 14;
+            meghosszabit.Text = "Meghosszabít";
+            meghosszabit.UseVisualStyleBackColor = true;
+            meghosszabit.Click += meghosszabit_Click;
+            // 
+            // visszavetel
+            // 
+            visszavetel.Location = new Point(338, 151);
+            visszavetel.Name = "visszavetel";
+            visszavetel.Size = new Size(95, 30);
+            visszavetel.TabIndex = 13;
+            visszavetel.Text = "Visszavétel";
+            visszavetel.UseVisualStyleBackColor = true;
+            visszavetel.Click += visszavetel_Click;
             // 
             // kzkmeddig
             // 
@@ -452,7 +490,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(400, 11);
+            label5.Location = new Point(336, 11);
             label5.Name = "label5";
             label5.Size = new Size(76, 15);
             label5.TabIndex = 2;
@@ -461,7 +499,7 @@
             // kzkKonyvValaszto
             // 
             kzkKonyvValaszto.FormattingEnabled = true;
-            kzkKonyvValaszto.Location = new Point(400, 29);
+            kzkKonyvValaszto.Location = new Point(337, 29);
             kzkKonyvValaszto.Name = "kzkKonyvValaszto";
             kzkKonyvValaszto.Size = new Size(249, 23);
             kzkKonyvValaszto.TabIndex = 1;
@@ -477,6 +515,15 @@
             kzkListBox.Size = new Size(309, 184);
             kzkListBox.TabIndex = 0;
             kzkListBox.SelectedIndexChanged += kzksr_SelectedIndexChanged;
+            // 
+            // kzkolvasov
+            // 
+            kzkolvasov.FormattingEnabled = true;
+            kzkolvasov.Location = new Point(338, 205);
+            kzkolvasov.Name = "kzkolvasov";
+            kzkolvasov.Size = new Size(248, 23);
+            kzkolvasov.TabIndex = 16;
+            kzkolvasov.SelectedIndexChanged += kzkolvasov_SelectedIndexChanged;
             // 
             // Form1
             // 
@@ -540,5 +587,9 @@
         private Label kzkMikortolLabel;
         private TextBox kzkolvnev;
         private Label label7;
+        private Button meghosszabit;
+        private Button visszavetel;
+        private Button kolcsonzes;
+        private ComboBox kzkolvasov;
     }
 }

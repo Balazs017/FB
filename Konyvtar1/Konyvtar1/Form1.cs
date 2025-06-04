@@ -49,6 +49,11 @@ namespace Konyvtar1
                 kzksor = kzksr.ReadLine();
             }
             kzksr.Close();
+
+            foreach (var item in OlvListBox.Items)
+            {
+                kzkolvasov.Items.Add(item);
+            }
         }
 
         private void kkFelvesz_Click(object sender, EventArgs e)
@@ -106,7 +111,7 @@ namespace Konyvtar1
             }
             swOlv.Close();
 
-            StreamWriter kzksr = new StreamWriter(@"..\..\..\kolcsonzesek.txt");
+            StreamWriter kzksr = new StreamWriter(@"..\..\..\kolcsonzes.txt");
             for (int i = 0; i < kzkListBox.Items.Count; i++)
             {
                 string sor = kzkListBox.Items[i].ToString();
@@ -320,9 +325,9 @@ namespace Konyvtar1
                 while (hol < kzkListBox.Items.Count && !megvan)
                 {
                     hol++;
-                    if (hol < kkListBox.Items.Count)
+                    if (hol < kzkListBox.Items.Count)
                     {
-                        megvan = kkListBox.Items[hol].ToString().Substring(0, 4) == konyvAzon;
+                        megvan = kzkListBox.Items[hol].ToString().Substring(0, 4) == konyvAzon;
                     }
                 }
                 if (megvan)
@@ -358,6 +363,176 @@ namespace Konyvtar1
                 kzkmikortol.Text = "";
                 kzkmeddig.Text = "";
             }
+        }
+
+        private void visszavetel_Click(object sender, EventArgs e)
+        {
+            if (kzkKonyvValaszto.SelectedIndex >= 0)
+            {
+                DialogResult dr = MessageBox.Show("Biztosan visszaveszed a könyvet?", "Visszavétel megerõsítése", MessageBoxButtons.YesNo);
+                if (dr == DialogResult.Yes)
+                {
+                    if (kzkListBox.Items.Count > 0)
+                    {
+                        string sor = kzkKonyvValaszto.Items[kzkKonyvValaszto.SelectedIndex].ToString();
+                        string konyvAzon = sor.Substring(0, 4);
+
+                        int hol = 0;
+                        bool megvan = kzkListBox.Items[hol].ToString().Substring(0, 4) == konyvAzon;
+                        while (hol < kzkListBox.Items.Count && !megvan)
+                        {
+                            hol++;
+                            if (hol < kzkListBox.Items.Count)
+                            {
+                                megvan = kzkListBox.Items[hol].ToString().Substring(0, 4) == konyvAzon;
+                            }
+                        }
+
+                        kzkListBox.Items.RemoveAt(hol);
+                        kzkolvnev.Text = "";
+                        kzkmikortol.Text = "";
+                        kzkmeddig.Text = "";
+                    }
+
+                }
+            }
+
+        }
+
+        private void meghosszabit_Click(object sender, EventArgs e)
+        {
+            if (kzkKonyvValaszto.SelectedIndex < 0)
+                return;
+
+            string kivalasztottSor = kzkKonyvValaszto.Items[kzkKonyvValaszto.SelectedIndex].ToString();
+
+            string konyvAzon = kivalasztottSor.Substring(0, 4);
+
+            int index = -1;
+            for (int i = 0; i < kzkListBox.Items.Count; i++)
+            {
+                string sor = kzkListBox.Items[i].ToString();
+                string[] mezok = sor.Split(';');
+                if (mezok.Length >= 4 && mezok[0] == konyvAzon)
+                {
+                    index = i;
+                    break;
+                }
+            }
+
+            if (index == -1)
+            {
+                MessageBox.Show("Nem található kölcsönzés a kiválasztott könyvhöz.");
+                return;
+            }
+
+            string eredetiSor = kzkListBox.Items[index].ToString();
+            string[] mezokSor = eredetiSor.Split(';');
+
+            string datumStr = mezokSor[3].Trim();
+            string[] parts = datumStr.Split('-');
+
+            if (parts.Length != 3)
+            {
+                MessageBox.Show("Nem megfelelõ formátumú 'meddig' dátum!");
+                return;
+            }
+
+            int ev, ho, nap;
+            if (!int.TryParse(parts[0], out ev) || !int.TryParse(parts[1], out ho) || !int.TryParse(parts[2], out nap))
+            {
+                MessageBox.Show("A 'meddig' dátum nem értelmezhetõ!");
+                return;
+            }
+
+
+            bool szokoev(int year)
+            {
+                if (year % 400 == 0) return true;
+                if (year % 100 == 0) return false;
+                if (year % 4 == 0) return true;
+                return false;
+            }
+
+            int[] honapNapjai = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+
+            nap += 10;
+
+            while (true)
+            {
+                int maxNap = honapNapjai[ho - 1];
+                if (ho == 2 && szokoev(ev))
+                    maxNap = 29;
+
+                if (nap > maxNap)
+                {
+                    nap -= maxNap;
+                    ho++;
+                    if (ho > 12)
+                    {
+                        ho = 1;
+                        ev++;
+                    }
+                }
+                else
+                {
+                    break;
+                }
+            }
+
+            string ujDatum = $"{ev:D4}-{ho:D2}-{nap:D2}";
+            mezokSor[3] = ujDatum;
+
+            string ujSor = string.Join(";", mezokSor);
+
+            kzkListBox.Items[index] = ujSor;
+
+            kzkmeddig.Text = ujDatum;
+        }
+
+        private void kolcsonzes_Click(object sender, EventArgs e)
+        {
+
+            
+
+            if (kzkKonyvValaszto.SelectedIndex < 0 || kzkolvasov.SelectedIndex < 0)
+
+                return;
+
+            string konyvSor = kzkKonyvValaszto.Items[kzkKonyvValaszto.SelectedIndex].ToString();
+
+            string konyvAzon = konyvSor.Substring(0, 4);
+
+            string olvasoSor = kzkolvasov.Items[kzkolvasov.SelectedIndex].ToString();
+
+            string olvasoAzon = olvasoSor.Substring(0, 4);
+
+            DateTime mettol = DateTime.Today;
+
+            DateTime meddig = mettol.AddDays(14);
+
+            string mettolStr = mettol.ToString("yyyy-MM-dd");
+
+            string meddigStr = meddig.ToString("yyyy-MM-dd");
+
+            string ujKolcsonzes = $"{konyvAzon};{olvasoAzon};{mettolStr};{meddigStr}";
+
+            kzkListBox.Items.Add(ujKolcsonzes);
+
+            kzkolvnev.Text = "";
+
+            kzkmikortol.Text = mettolStr;
+
+            kzkmeddig.Text = meddigStr;
+
+        }
+ 
+
+        
+
+        private void kzkolvasov_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
