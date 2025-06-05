@@ -58,6 +58,7 @@
             label8 = new Label();
             OlvListBox = new ListBox();
             tabPage3 = new TabPage();
+            kzkolvasov = new ComboBox();
             kolcsonzes = new Button();
             meghosszabit = new Button();
             visszavetel = new Button();
@@ -70,7 +71,6 @@
             label5 = new Label();
             kzkKonyvValaszto = new ComboBox();
             kzkListBox = new ListBox();
-            kzkolvasov = new ComboBox();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
@@ -406,6 +406,15 @@
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Kölcsönzések";
             // 
+            // kzkolvasov
+            // 
+            kzkolvasov.FormattingEnabled = true;
+            kzkolvasov.Location = new Point(338, 205);
+            kzkolvasov.Name = "kzkolvasov";
+            kzkolvasov.Size = new Size(248, 23);
+            kzkolvasov.TabIndex = 16;
+            kzkolvasov.SelectedIndexChanged += kzkolvasov_SelectedIndexChanged;
+            // 
             // kolcsonzes
             // 
             kolcsonzes.Location = new Point(338, 252);
@@ -515,15 +524,6 @@
             kzkListBox.Size = new Size(309, 184);
             kzkListBox.TabIndex = 0;
             kzkListBox.SelectedIndexChanged += kzksr_SelectedIndexChanged;
-            // 
-            // kzkolvasov
-            // 
-            kzkolvasov.FormattingEnabled = true;
-            kzkolvasov.Location = new Point(338, 205);
-            kzkolvasov.Name = "kzkolvasov";
-            kzkolvasov.Size = new Size(248, 23);
-            kzkolvasov.TabIndex = 16;
-            kzkolvasov.SelectedIndexChanged += kzkolvasov_SelectedIndexChanged;
             // 
             // Form1
             // 

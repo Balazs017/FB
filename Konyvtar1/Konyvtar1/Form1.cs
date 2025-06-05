@@ -170,14 +170,41 @@ namespace Konyvtar1
         {
             if (kkListBox.SelectedIndex >= 0)
             {
-                DialogResult dr = MessageBox.Show("Valóban törlöd?", "Könyv törlése", MessageBoxButtons.YesNo);
-                if (dr == DialogResult.Yes)
+
+                string konyvSor = kkListBox.Items[kkListBox.SelectedIndex].ToString();
+                string konyvAzon = konyvSor.Substring(0, 4);
+
+
+                bool kolcsonozve = false;
+                for (int i = 0; i < kzkListBox.Items.Count; i++)
                 {
-                    kkListBox.Items.RemoveAt(kkListBox.SelectedIndex);
-                    KKAzon.Text = "";
-                    kkSzerzo.Text = "";
-                    kkCim.Text = "";
-                    kkKiad.Text = "";
+                    string kolcsonzesSor = kzkListBox.Items[i].ToString();
+                    string kolcsonzotKonyvAzon = kolcsonzesSor.Substring(0, 4);
+
+                    if (konyvAzon == kolcsonzotKonyvAzon)
+                    {
+                        kolcsonozve = true;
+                        break;
+                    }
+                }
+
+
+                if (kolcsonozve)
+                {
+                    MessageBox.Show("A könyv kölcsön van adva, ezért nem törölhetõ.");
+                }
+                else
+                {
+
+                    DialogResult dr = MessageBox.Show("Valóban törlöd?", "Könyv törlése", MessageBoxButtons.YesNo);
+                    if (dr == DialogResult.Yes)
+                    {
+                        kkListBox.Items.RemoveAt(kkListBox.SelectedIndex);
+                        KKAzon.Text = "";
+                        kkSzerzo.Text = "";
+                        kkCim.Text = "";
+                        kkKiad.Text = "";
+                    }
                 }
             }
         }
@@ -534,5 +561,7 @@ namespace Konyvtar1
         {
 
         }
+
+
     }
 }
